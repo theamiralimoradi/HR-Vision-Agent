@@ -1,0 +1,41 @@
+# Credentials and local overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*secrets*.json
+.streamlit/secrets.toml
+
+# Private candidate data, cached results, logs and exports
+inbox/*
+!inbox/.gitkeep
+outbox/
+output/
+outputs/
+exports/
+reports/
+results/
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
+
+# Python and local development
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+.DS_Store
+.idea/
+.vscode/
